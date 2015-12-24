@@ -9,7 +9,7 @@
     apt: name=curl state=present
 
   - name: Get Varnish key
-    apt_key: url:https://repo.varnish-cache.org/ubuntu/GPG-key.txt state=present
+    apt_key: url=https://repo.varnish-cache.org/ubuntu/GPG-key.txt state=present
 
   - name: Add Varnish sources to sources.list.d
     copy:
